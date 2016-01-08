@@ -270,9 +270,9 @@ inline void modbusMaster::readBuffer(uint8_t frameSize) {
       Serial.print(F(" "));
     Serial.print(_buffer[index], HEX);
   }
+#endif
   MODBUS_SERIAL_PRINT(" ");
   MODBUS_SERIAL_PRINTLN(millis());
-#endif
 }
 
 //-----------------------------------------------------------------------------
